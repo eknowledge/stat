@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Statistics</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Simple Statistics Calculator</h1>
+    <form id="statisticsForm">
+      <label for="numbers">Enter 10 numbers:</label>
+      <br>
+      <input type="text" class="numberInput" name="numbers[]" oninput="calculateStatistics()">
+      <input type="text" class="numberInput" name="numbers[]" oninput="calculateStatistics()">
+      <input type="text" class="numberInput" name="numbers[]" oninput="calculateStatistics()">
+      <input type="text" class="numberInput" name="numbers[]" oninput="calculateStatistics()">
+      <input type="text" class="numberInput" name="numbers[]" oninput="calculateStatistics()">
+      <br>
+      <input type="text" class="numberInput" name="numbers[]" oninput="calculateStatistics()">
+      <input type="text" class="numberInput" name="numbers[]" oninput="calculateStatistics()">
+      <input type="text" class="numberInput" name="numbers[]" oninput="calculateStatistics()">
+      <input type="text" class="numberInput" name="numbers[]" oninput="calculateStatistics()">
+      <input type="text" class="numberInput" name="numbers[]" oninput="calculateStatistics()">
+    </form>
+
+    <div id="results">
+      <h2>Statistics Results</h2>
+      <p id="average">Average: </p>
+      <p id="standardDeviation">Standard Deviation: </p>
+      <p id="mode">Mode: </p>
+      <p id="median">Median: </p>
+    </div>
+
+    <div class="histogram">
+      <h2>Histogram</h2>
+      <canvas id="histogramCanvas"></canvas>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
